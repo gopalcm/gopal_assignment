@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ListWidget extends StatelessWidget {
-  const ListWidget({Key? key}) : super(key: key);
+  const ListWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,10 +24,10 @@ class CounterItemWidget extends StatelessWidget {
   final VoidCallback onTapPlus;
 
   const CounterItemWidget({
-    Key? key,
+    super.key,
     required this.counter,
     required this.onTapPlus,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
